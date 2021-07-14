@@ -1,0 +1,96 @@
+/*
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .text-card {
+    background-color: var(--dark-blue);
+    width: 500px;
+    height: 450px;
+    border-radius: 10px 0px 0px 10px;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.insights {
+    color: var(--soft-violet);
+}
+
+.text-card p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca';
+    text-align:left;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 90px;
+}
+
+.text-card .text-status {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0;
+}
+.text-status p {
+        color: white;
+        font-family: 'Inter';
+        font-weight: bold;
+        margin-bottom: 0;
+}
+
+.text-status span {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+img {
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.image-card {
+background: var(--soft-violet);    
+height: 450px;
+}
+
